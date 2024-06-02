@@ -1,6 +1,10 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { UsersModule } from './users/users.module';
+import { AccountInformationModule } from './account_information/account_information.module';
+import { TransactionsModule } from './transactions/transactions.module';
+import { ApplicationModule } from './application/application.module';
 
 @Module({
   imports: [
@@ -16,6 +20,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       synchronize: true,
       logging: false,
     }),
+    UsersModule,
+    AccountInformationModule,
+    TransactionsModule,
+    ApplicationModule,
   ],
   controllers: [],
   providers: [],
