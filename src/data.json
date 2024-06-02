@@ -1,0 +1,167 @@
+[
+  {
+    "block": "A",
+    "padez1": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez2": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez3": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez4": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez5": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    }
+  },
+  {
+    "block": "B",
+    "padez1": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez2": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez3": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez4": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez5": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    }
+  },
+  {
+    "block": "C",
+    "padez1": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez2": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez3": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez4": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez5": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    }
+  },
+  {
+    "block": "D",
+    "padez1": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez2": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez3": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez4": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez5": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    }
+  },
+  {
+    "block": "E",
+    "padez1": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez2": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez3": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez4": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    },
+    "padez5": {
+      "flats": 20,
+      "one_room": 4,
+      "two_room": 10,
+      "three_room": 6
+    }
+  }
+]

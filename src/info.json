@@ -1,0 +1,77 @@
+[
+  {
+    "one_room_price": "12 mln",
+    "two_room_price": "10 mln",
+    "three_room_price": "8 mln",
+    "one_room_size": "40kvt",
+    "two_room_size": "58kvt",
+    "three_room_size": "73kvt",
+    "price_for_installment_plan": {
+      "1_3_floor": {
+        "1kvm": "12 mln",
+        "2_flat": {
+          "start": "100 mln",
+          "1_10_month": "10 mln",
+          "2_10_month": "11 mln",
+          "3_10_month": "12 mln",
+          "last_6_month": "23 mln"
+        },
+        "3_flat": {
+          "start": "170 mln",
+          "1_10_month": "15 mln",
+          "2_10_month": "16 mln",
+          "3_10_month": "17 mln",
+          "last_6_month": "38 mln"
+        }
+      },
+      "4_7_floor": {
+        "1kvm": "10 mln",
+        "1_flat": {
+          "start": "80 mln",
+          "1_10_month": "6 mln",
+          "2_10_month": "7 mln",
+          "3_10_month": "8 mln",
+          "last_6_month": "13 mln"
+        },
+        "2_flat": {
+          "start": "130 mln",
+          "1_10_month": "9 mln",
+          "2_10_month": "10 mln",
+          "3_10_month": "11 mln",
+          "last_6_month": "25 mln"
+        },
+        "3_flat": {
+          "start": "160 mln",
+          "1_10_month": "11 mln",
+          "2_10_month": "12 mln",
+          "3_10_month": "13 mln",
+          "last_6_month": "35 mln"
+        }
+      },
+      "8_10_floor": {
+        "1kvm": "8 mln",
+        "1_flat": {
+          "start": "70 mln",
+          "1_10_month": "5 mln",
+          "2_10_month": "6 mln",
+          "3_10_month": "7 mln",
+          "last_6_month": "12 mln"
+        },
+        "2_flat": {
+          "start": "90 mln",
+          "1_10_month": "8 mln",
+          "2_10_month": "9 mln",
+          "3_10_month": "10 mln",
+          "last_6_month": "18 mln"
+        },
+        "3_flat": {
+          "start": "110 mln",
+          "1_10_month": "10 mln",
+          "2_10_month": "11 mln",
+          "3_10_month": "12 mln",
+          "last_6_month": "24 mln"
+        }
+      }
+    }
+  }
+]
