@@ -3,7 +3,7 @@ import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { Application } from '../../application/entities/application.entity';
 
 @ApiTags('users')
-@Entity()
+@Entity('users')
 export class User {
   @ApiProperty({ example: 1, description: 'User ID' })
   @PrimaryGeneratedColumn()
@@ -27,6 +27,6 @@ export class User {
   @Column()
   passport_seria_number: string;
 
-  @Column()
+  @Column({ nullable: true })
   application_id: number;
 }

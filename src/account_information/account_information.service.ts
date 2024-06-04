@@ -1,26 +1,72 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { AccountInformation } from './entities/account_information.entity';
 import { CreateAccountInformationDto } from './dto/create-account_information.dto';
 import { UpdateAccountInformationDto } from './dto/update-account_information.dto';
 
 @Injectable()
-export class AccountInformationService {
-  create(createAccountInformationDto: CreateAccountInformationDto) {
-    return 'This action adds a new accountInformation';
+export class AccountInformationsService {
+  constructor(
+    @InjectRepository(AccountInformation)
+    private readonly accountInformationRepository: Repository<AccountInformation>,
+  ) {}
+
+  async create(createAccountInformationDto: CreateAccountInformationDto) {
+    try {
+      const accountInformation = this.accountInformationRepository.create(
+        createAccountInformationDto,
+      );
+      return this.accountInformationRepository.save(accountInformation);
+    } catch (e) {
+      return { error: e.message };
+    }
   }
 
-  findAll() {
-    return `This action returns all accountInformation`;
+  async findAll() {
+    return this.accountInformationRepository.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} accountInformation`;
+  async findOne(id: number) {
+    try {
+      const accountInformation =
+        await this.accountInformationRepository.findOne({
+          where: { id },
+        });
+      if (!accountInformation) {
+        throw new NotFoundException(
+          `AccountInformation with ID ${id} not found`,
+        );
+      }
+      return accountInformation;
+    } catch (e) {
+      return { error: e.message };
+    }
   }
 
-  update(id: number, updateAccountInformationDto: UpdateAccountInformationDto) {
-    return `This action updates a #${id} accountInformation`;
+  async update(
+    id: number,
+    updateAccountInformationDto: UpdateAccountInformationDto,
+  ) {
+    try {
+      await this.accountInformationRepository.update(
+        { id },
+        updateAccountInformationDto,
+      );
+      return this.findOne(id);
+    } catch (e) {
+      return { error: e.message };
+    }
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} accountInformation`;
+  async remove(id: number) {
+    const accountInformationToRemove = await this.findOne(id);
+    if ('error' in accountInformationToRemove) {
+      // AccountInformation not found, return the error
+      return accountInformationToRemove;
+    }
+    return this.accountInformationRepository.remove([
+      accountInformationToRemove,
+    ]);
   }
 }
